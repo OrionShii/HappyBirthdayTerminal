@@ -20,15 +20,15 @@ export default function ImageGallery() {
   // Add your images to the public folder and update these paths
   const images = [
     {
-      url: "./images/1.jpg",
+      url: "./images/1.JPG",
       caption: "Celebrating Another Year! 🎉"
     },
     {
-      url: "./images/2.jpg",
+      url: "./images/2.JPG",
       caption: "Coding Adventures Continue! 💻"
     },
     {
-      url: "./images/3.jpg",
+      url: "./images/3.JPG",
       caption: "Here's to New Beginnings! 🎈"
     }
   ];
