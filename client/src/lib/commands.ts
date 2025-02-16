@@ -2,7 +2,7 @@ let isUnlocked = false;
 let hasRevealedMessage = false;
 let isGalleryVisible = false;
 
-const PASSWORD = "hb2024";
+const PASSWORD = "hbdojan";
 
 const COMMANDS = {
   help: () => `Available commands:
