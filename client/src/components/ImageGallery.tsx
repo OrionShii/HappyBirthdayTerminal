@@ -16,18 +16,18 @@ export default function ImageGallery() {
     };
   }, []);
 
-  // Replace these URLs with your actual image URLs
+  // Add your images to the public/images folder and update these paths
   const images = [
     {
-      url: "https://source.unsplash.com/random/400x300/?hacker", // Replace with actual image URL
+      url: "/images/image1.jpg", // Replace with your image filename
       caption: "Happy Birthday Fauzan! 🎉"
     },
     {
-      url: "https://source.unsplash.com/random/400x300/?coding", // Replace with actual image URL
+      url: "/images/image2.jpg", // Replace with your image filename
       caption: "Keep Coding & Stay Awesome! 💻"
     },
     {
-      url: "https://source.unsplash.com/random/400x300/?celebration", // Replace with actual image URL
+      url: "/images/image3.jpg", // Replace with your image filename
       caption: "Best Wishes for 2024! 🎈"
     }
   ];
