@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Card } from '@/components/ui/card';
@@ -16,18 +17,18 @@ export default function ImageGallery() {
     };
   }, []);
 
-  // Add your images to the public/images folder and update these paths
+  // Add your images to the public folder and update these paths
   const images = [
     {
-      url: "/images/birthday_photo.jpg",
+      url: "/images/1.jpg",
       caption: "Celebrating Another Year! 🎉"
     },
     {
-      url: "/images/coding_memories.jpg",
+      url: "/images/2.jpg",
       caption: "Coding Adventures Continue! 💻"
     },
     {
-      url: "/images/future_goals.jpg",
+      url: "/images/3.jpg",
       caption: "Here's to New Beginnings! 🎈"
     }
   ];
