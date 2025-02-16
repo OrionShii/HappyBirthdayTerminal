@@ -19,16 +19,16 @@ export default function ImageGallery() {
   // Add your images to the public/images folder and update these paths
   const images = [
     {
-      url: "/images/image1.jpg", // Replace with your image filename
-      caption: "Happy Birthday Fauzan! 🎉"
+      url: "/images/birthday_photo.jpg",
+      caption: "Celebrating Another Year! 🎉"
     },
     {
-      url: "/images/image2.jpg", // Replace with your image filename
-      caption: "Keep Coding & Stay Awesome! 💻"
+      url: "/images/coding_memories.jpg",
+      caption: "Coding Adventures Continue! 💻"
     },
     {
-      url: "/images/image3.jpg", // Replace with your image filename
-      caption: "Best Wishes for 2024! 🎈"
+      url: "/images/future_goals.jpg",
+      caption: "Here's to New Beginnings! 🎈"
     }
   ];
 
