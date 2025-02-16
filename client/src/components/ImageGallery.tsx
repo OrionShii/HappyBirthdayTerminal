@@ -16,11 +16,20 @@ export default function ImageGallery() {
     };
   }, []);
 
-  // Using themed placeholder images that match our hacker aesthetic
+  // Replace these URLs with your actual image URLs
   const images = [
-    "https://placehold.co/400x300/0a0a0a/00ff00?text=Happy+Birthday+Fauzan",
-    "https://placehold.co/400x300/0a0a0a/00ff00?text=Keep+Coding+%F0%9F%92%BB",
-    "https://placehold.co/400x300/0a0a0a/00ff00?text=Best+Wishes+2024+%F0%9F%8E%89"
+    {
+      url: "https://source.unsplash.com/random/400x300/?hacker", // Replace with actual image URL
+      caption: "Happy Birthday Fauzan! 🎉"
+    },
+    {
+      url: "https://source.unsplash.com/random/400x300/?coding", // Replace with actual image URL
+      caption: "Keep Coding & Stay Awesome! 💻"
+    },
+    {
+      url: "https://source.unsplash.com/random/400x300/?celebration", // Replace with actual image URL
+      caption: "Best Wishes for 2024! 🎈"
+    }
   ];
 
   return (
@@ -47,7 +56,7 @@ export default function ImageGallery() {
               }
             }}
           >
-            {images.map((src, index) => (
+            {images.map((image, index) => (
               <motion.div
                 key={index}
                 variants={{
@@ -58,12 +67,12 @@ export default function ImageGallery() {
                 <Card className="overflow-hidden border-green-500/50 hover:border-green-400 transition-colors duration-300">
                   <div className="relative group">
                     <img
-                      src={src}
+                      src={image.url}
                       alt={`Birthday Memory ${index + 1}`}
-                      className="w-full h-full object-cover"
+                      className="w-full h-[300px] object-cover"
                     />
                     <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                      <span className="text-green-400 font-mono">MEMORY_FRAGMENT_{index + 1}</span>
+                      <span className="text-green-400 font-mono text-center px-4">{image.caption}</span>
                     </div>
                   </div>
                 </Card>
